@@ -1,0 +1,364 @@
+rosewater: &rosewater "#f5e0dc"
+flamingo: &flamingo "#f2cdcd"
+pink: &pink "#f5c2e7"
+mauve: &mauve "#cba6f7"
+red: &red "#f38ba8"
+maroon: &maroon "#eba0ac"
+peach: &peach "#fab387"
+yellow: &yellow "#f9e2af"
+green: &green "#a6e3a1"
+teal: &teal "#94e2d5"
+sky: &sky "#89dceb"
+sapphire: &sapphire "#74c7ec"
+blue: &blue "#89b4fa"
+lavender: &lavender "#b4befe"
+text: &text "#cdd6f4"
+subtext1: &subtext1 "#bac2de"
+subtext0: &subtext0 "#a6adc8"
+overlay2: &overlay2 "#9399b2"
+overlay1: &overlay1 "#7f849c"
+overlay0: &overlay0 "#6c7086"
+surface2: &surface2 "#585b70"
+surface1: &surface1 "#45475a"
+surface0: &surface0 "#313244"
+base: &base "#1e1e2e"
+mantle: &mantle "#181825"
+crust: &crust "#11111b"
+
+general:
+
+  # Pencere fareyi takip eder
+  focus_follows_cursor: false
+
+  # Fare pencereyi takip eder
+  cursor_follows_focus: false
+
+  # when focusing the current workspace.
+  toggle_workspace_on_refocus: true
+
+  # Yüzen pencereleri her zaman üstte göster 
+  show_floating_on_top: true
+
+  # Yüzen pencereleri kaydırma değişkeni
+  floating_window_move_amount: "5%"
+
+  # Yüzen pencereleri ortala
+  center_new_floating_windows: true
+
+  # Pencere animasyonları
+  window_animations: "unchanged"
+  
+gaps:
+
+  #Pencereler arası boşluk
+  inner_gap: "5px"
+
+  #Pencere monitör arası boşluk
+  outer_gap: "8px"
+
+  
+focus_borders:
+
+  active:
+    enabled: true
+    color: *crust
+
+  inactive:
+    enabled: true
+    color: *crust
+
+bar:
+  height: "35px"
+  position: "top"
+  always_on_top: false
+  opacity: 1
+  background: "transparent"
+  foreground: *text
+  font_family: "JetBrainsMono Nerd Font"
+  font_size: "13px"
+  offset_x: "5"
+  offset_y: "5"
+
+  components_left:
+
+    - type: "workspaces"
+      focused_workspace_background: "transparent"
+      focused_workspace_foreground: *pink
+      displayed_workspace_foreground: "#ffffff"
+      displayed_workspace_background: "transparent"
+      default_workspace_background: "transparent"
+      background: "#11111b"
+      border_width: "3px"
+      border_color: "#11111b"
+      border_radius: "7px"
+
+  components_right:
+  
+    - type: "system tray"
+      background: "#11111b"
+      foreground: *sky
+      border_width: "3px"
+      border_color: "#11111b"
+      border_radius: "7px"
+      label_expand_text: " "
+      label_collapse_text: " "
+      padding: "6px 10px"
+      margin: "0 8px"
+    
+    - type: "network"
+      background: "#11111b"
+      foreground: *lavender
+      border_width: "3px"
+      border_color: "#11111b"
+      border_radius: "7px"
+      padding: "0 8px"
+      margin: "0 -20px 0 0"
+      label_no_internet: "󰤭"
+      label_ethernet: "󰈀"
+      label_wifi_strength_0: "WiFi: 0%"
+      label_wifi_strength_25: "WiFi: 25%"
+      label_wifi_strength_50: "WiFi: 50%"
+      label_wifi_strength_75: "WiFi: 75%"
+      label_wifi_strength_100: "WiFi: 100%"
+      
+    - type: "text"
+      text: " "
+      left_click_command: "exec explorer ms-availablenetworks:"
+      font_size: 20
+      margin: "0 12px 0 -4px"
+      
+    - type: "battery"
+      background: "#11111b"
+      foreground: *flamingo
+      border_width: "3px"
+      border_color: "#11111b"
+      border_radius: "7px"
+      padding: "0 8px"
+      margin: "0 3px 0 10px"
+      label_draining: "󰁿  {battery_level}"
+      label_charging: "󰢞  {battery_level}"
+      
+    - type: "clock"
+      background: "#11111b"
+      foreground: *red
+      border_width: "3px"
+      border_color: "#11111b"
+      border_radius: "7px"
+      time_formatting: "  HH:mm"
+      margin: "0 6px"
+      padding: "0 10px"
+      
+    - type: "clock"
+      background: "#11111b"
+      foreground: *teal
+      border_width: "3px"
+      border_color: "#11111b"
+      border_radius: "7px"
+      time_formatting: "  dd/MM"
+      margin: "0 8px 0 4px"
+      padding: "0 10px"
+      
+      
+    - type: "text"
+      text: " 󰐥 "
+      background: "#11111b"
+      border_width: "3px"
+      border_color: "#11111b"
+      border_radius: "7px"
+      left_click_command: exec 'C:\games\apps\Kodlar\kapat\kapat_yeniden_baslat.exe'
+      font_size: 16
+      foreground: *red
+           
+workspaces:
+
+  - name: "1"
+  - name: "2"
+  - name: "3"
+  - name: "4"
+  - name: "5"
+  - name: "6"
+  - name: "7"
+  - name: "8"
+  - name: "9"
+
+window_rules:
+
+  # Task Manager requires admin privileges to manage and should be ignored unless running
+  # the WM as admin.
+  #- command: "ignore"
+  
+  
+   # match_process_name: "/Taskmgr|ScreenClippingHost/"
+
+  # Launches system dialogs as floating by default (eg. File Explorer save/open dialog).
+  - command: "set floating"
+    match_class_name: "#32770"
+    
+  - command: "resize borders -10px -10px -10px -10px"
+    match_process_name: "steam"
+    
+  - command: "ignore"
+    match_process_name: "Flow.Launcher" 
+    
+  - command: "ignore"
+    match_process_name: "MSPCManager"
+    
+  - command: "ignore"
+    match_process_name: "GHelper"
+    
+  - command: "ignore"
+    match_process_name: "kapat"
+    
+  - command: "ignore"
+    match_process_name: "kapat_yeniden_baslat"
+
+keybindings:
+
+  # Pencereye geç
+  - command: "focus left"
+    bindings: ["Alt+H", "Alt+Left"]
+  - command: "focus right"
+    bindings: ["Alt+L", "Alt+Right"]
+  - command: "focus up"
+    bindings: ["Alt+K", "Alt+Up"]
+  - command: "focus down"
+  
+    bindings: ["Alt+J", "Alt+Down"]
+
+  # Pencereleri değiştir
+  - command: "move left"
+  
+    bindings: ["Alt+Shift+H", "Alt+Shift+Left"]
+  - command: "move right"
+  
+    bindings: ["Alt+Shift+L", "Alt+Shift+Right"]
+  - command: "move up"
+    bindings: ["Alt+Shift+K", "Alt+Shift+Up"]
+  - command: "move down"
+    bindings: ["Alt+Shift+J", "Alt+Shift+Down"]
+
+  # Pencere boyutunu ayarla
+  - command: "resize width -2%"
+    binding: "Alt+U"
+  - command: "resize width +2%"
+    binding: "Alt+P"
+  - command: "resize height +2%"
+    binding: "Alt+O"
+  - command: "resize height -2%"
+    binding: "Alt+I"
+
+  # Döşeme yönünü değiştir
+  - command: "tiling direction toggle"
+    binding: "Alt+W"
+
+  # Döşeme modunu değiştir
+  - command: "toggle floating"
+    binding: "Alt+Shift+Space"
+
+  # Pencereyi tam ekran yap
+  - command: "toggle maximized"
+    binding: "Alt+F"
+
+  # Pencereyi küçült
+  - command: "set minimized"
+    binding: "Alt+M"
+    
+  # Pencereyi kapat
+  - command: "close"
+    binding: "Alt+Q"
+
+  # GlazeWM komutları
+  - command: "exit wm"
+    binding: "Alt+Shift+E"
+
+  - command: "reload config"
+    binding: "Alt+Shift+R"
+
+  # Çalışma alanına geç
+  - command: "focus workspace 1"
+    binding: "Alt+1"
+  - command: "focus workspace 2"
+    binding: "Alt+2"
+  - command: "focus workspace 3"
+    binding: "Alt+3"
+  - command: "focus workspace 4"
+    binding: "Alt+4"
+  - command: "focus workspace 5"
+    binding: "Alt+5"
+  - command: "focus workspace 6"
+    binding: "Alt+6"
+  - command: "focus workspace 7"
+    binding: "Alt+7"
+  - command: "focus workspace 8"
+    binding: "Alt+8"
+  - command: "focus workspace 9"
+    binding: "Alt+9"
+
+  # Pencereyi çalışma alanına taşı
+  - commands: ["move to workspace 1", "focus workspace 1"]
+    binding: "Alt+Shift+1"
+  - commands: ["move to workspace 2", "focus workspace 2"]
+    binding: "Alt+Shift+2"
+  - commands: ["move to workspace 3", "focus workspace 3"]
+    binding: "Alt+Shift+3"
+  - commands: ["move to workspace 4", "focus workspace 4"]
+    binding: "Alt+Shift+4"
+  - commands: ["move to workspace 5", "focus workspace 5"]
+    binding: "Alt+Shift+5"
+  - commands: ["move to workspace 6", "focus workspace 6"]
+    binding: "Alt+Shift+6"
+  - commands: ["move to workspace 7", "focus workspace 7"]
+    binding: "Alt+Shift+7"
+  - commands: ["move to workspace 8", "focus workspace 8"]
+    binding: "Alt+Shift+8"
+  - commands: ["move to workspace 9", "focus workspace 9"]
+    bindings: ["Alt+Shift+9"]
+
+    #Kullanılan tuşlar{H,J,K,L,U,I,O,P,W,F,M,Q,B,V,G,A,E,Shift+R,Shift+E,Shift+D,Shift+Space,Enter}
+
+    #Programlar
+  - command: exec brave
+    binding: "Alt+B"
+    
+  - command: exec wt
+    binding: "Alt+Enter"
+    
+  - command: exec 'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\VS Code.lnk'
+    binding: "Alt+V"
+    
+  - command: exec 'C:\Games\Oyunlar'
+    binding: "Alt+G"
+    
+  - command: exec 'C:\Games\Apps'
+    binding: "Alt+A"
+    
+  - command: exec 'C:\'
+    binding: "Alt+E"
+    
+  - command: exec 'C:\Users\Alfendow\Documents\Dökümanlar\Emirhan.pdf'
+    binding: "Alt+Shift+D"
+    
+  - command: exec 'C:\Users\Alfendow\Downloads\Final.pdf'
+    binding: "Alt+Shift+S"
+    
+  - command: exec 'https://youtube.com'
+    binding: "Alt+Y"
+    
+  - command: exec 'C:\Users\Alfendow\.glaze-wm\config.yaml'
+    binding: "Alt+Shift+C"
+    
+  - command: exec 'C:\ProgramData\Microsoft\Windows\Start Menu\Programs'
+    binding: "Alt+Shift+A"
+    
+  - command: exec 'C:\Users\Alfendow\Documents\Dökümanlar\Siyah.webp'
+    binding: "Alt+Shift+T"
+    
+  - command: exec shell:RecycleBinFolder
+    binding: "Alt+Shift+G"
+    
+  - command: exec 'C:\Users\Alfendow\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\System Tools\Control Panel.lnk'
+    binding: "Ctrl+Alt+C" 
+    
+  - command: exec 'C:\Users\Alfendow\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Scoop Apps\Obsidian.lnk'
+    binding: "Alt+Shift+O"
+    
