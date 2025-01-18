@@ -1,0 +1,64 @@
+/**
+ * Import the Nerdfonts icon font.
+ * Ref https://www.nerdfonts.com/cheat-sheet for a cheatsheet of available Nerdfonts icons.
+ */
+@import 'https://www.nerdfonts.com/assets/css/webfont.css';
+
+i {
+  color: rgb(115 130 175 / 95%);
+  margin-right: 7px;
+}
+
+body {
+  color: #ffffff;
+  font-family: ui-monospace, monospace;
+  font-size: 12px;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  background: transparent;
+}
+
+.app {
+  display: grid;
+  align-items: center;
+  height: 100%;
+  font-family: JetBrainsMono NF ExtraBold;
+  font-size: 14px;
+  transition: all 0.5s ease-out;
+}
+
+
+.center{
+  justify-self: center;
+}
+
+
+.workspaces {
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+}
+
+.workspace {
+  background: transparent;
+  color :#c396a3;
+  border: none;
+
+  &.displayed {
+    background: transparent;
+    margin: -1px;
+  }
+
+  &.focused {
+    color: #9b415a;
+  }
+}
+
+
