@@ -1,0 +1,10 @@
+format = """
+$directory\
+[ ](fg:transparent bg:#9B415A)\
+"""
+
+[directory]
+style = "bg:#9B415A  fg:#000000"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
