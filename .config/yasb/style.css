@@ -1,0 +1,212 @@
+
+*{
+	font-size: 13px;
+	color: #ffffff;
+	font-weight: 800;
+	font-family: JetBrainsMono NFP;
+}
+
+
+
+.yasb-bar {
+	padding: 0px 5px;
+}
+
+
+/* GlazeWM */
+
+.glazewm-workspaces {
+	background-color: #0f0f0f;
+	border: 2px solid;
+	border-color: #fdb9c6;
+	padding: 5px;
+    border-radius: 6px;
+	margin-right: 10px;
+}
+
+
+.glazewm-workspaces .ws-btn {
+    border: none;
+    padding: 0px 8px;
+}
+.glazewm-workspaces .ws-btn.active {
+    color: #fdb9c6;
+}
+
+
+/* Clock-Calendar */
+
+
+.clock-widget {
+    background-color: #0f0f0f;
+    padding: 0 15px;
+	border: 2px solid;
+	border-color: #fdb9c6;
+	border-radius: 6px;
+}
+
+
+.calendar,
+.calendar .calendar-table,
+.calendar .calendar-table::item {
+    background-color: #0f0f0f;
+	
+}
+.calendar .calendar-table::item:selected {
+    background-color: #fdb9c6;
+		border-radius: 4px;
+}
+
+.calendar .day-label,
+.calendar .month-label,
+.calendar .date-label {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    min-width: 150px;
+    max-width: 150px;
+}
+
+.calendar .date-label {
+    font-size: 88px;
+    font-weight: 8800;
+}
+
+
+
+/* Taskbar */
+ 
+.taskbar-widget {
+	background-color: #0f0f0f;
+	border: 2px solid;
+	border-color: #fdb9c6;
+	padding: 0 7px;
+    border-radius: 6px;
+} 
+ 
+.taskbar-widget .app-icon {
+    padding:0 5px;
+}
+ 
+
+/* Volume */
+
+.volume-widget {	
+}
+.volume-widget .label {
+	padding-right:10px;
+	padding-left:10px;
+	background-color: #0f0f0f;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	border-color: #fdb9c6;
+}
+
+
+.audio-menu {
+    background-color: #0f0f0f;
+	border: 3px solid;
+	border-color: #fdb9c6;
+	border-radius: 6px;
+
+}
+.audio-container .device {
+	border-radius: 6px;
+    padding:6px 8px;
+    margin: 3px 0;
+}
+.audio-container .device.selected {
+	color: #0f0f0f;
+	border: 2px solid;
+	background-color: #fdb9c6;
+	border-radius: 6px;
+}
+
+.audio-container .device:hover {
+	background-color: rgba(255,255,255,0.1);
+	color: #ffffff;
+	border: 0px;
+	border-radius: 6px;
+}
+
+
+
+/* Power menu */
+
+
+.power-menu-widget .label {
+	color: #ffffff;
+	padding-right:15px;
+	padding-left:10px;
+	font-size: 14px;
+	background-color: #0f0f0f;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	border-right: 2px solid;
+	border-color: #fdb9c6;
+    border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+
+.power-menu-popup {
+	background-color: #0f0f0f;
+	border: 3px solid;
+	border-color: #fdb9c6;
+    border-radius: 6px;
+}
+.power-menu-popup .button {
+	width: 180px;
+	height: 230px;
+	border: 0px;
+}
+.power-menu-popup .button.hover {
+	background-color:rgba(255, 255, 255, 0.1);
+}
+
+.power-menu-popup .button .icon {
+	font-size: 64px;
+	padding-top: 32px;
+}
+
+
+.uptime {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+
+
+/*Tray*/
+
+
+.systray .button {
+	background-color: #0f0f0f;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	border-color: #fdb9c6;
+	border-radius: 0px;
+    padding: 7px 4px;
+}
+
+
+.systray .unpinned-visibility-btn {
+	background-color: #0f0f0f;
+    height: 25px;
+	padding: 6px;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	border-left: 2px solid;
+	border-color: #fdb9c6;
+    border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+
+.systray .unpinned-visibility-btn:checked {
+	background-color: #0f0f0f;
+	padding: 4px 3px;	
+}
+
+.systray .unpinned-visibility-btn:hover {
+	background-color: #0f0f0f;
+}
