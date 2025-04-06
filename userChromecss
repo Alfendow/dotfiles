@@ -1,0 +1,146 @@
+@-moz-document url-prefix("chrome:") {
+
+  /* Remove Extension icon */
+  .extensionPage {
+    display: none !important;
+  }
+  #identity-icon-box.identity-box-button {
+    display: none !important;
+  }
+  #identity-permission-box {
+    background: none !important;
+    box-shadow: none !important; 
+    border: none !important;     
+  }
+
+/* Remove Search with duckduckgo */
+
+#urlbar-input::placeholder {
+  color: transparent !important;
+}
+
+#urlbar {
+  --toolbarbutton-border-radius: 0px !important;
+  
+}
+
+#urlbar-background{
+  border: none !important;
+  box-shadow: none !important;
+}
+
+:root:not([inDOMFullscreen="true"]) #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
+  border-radius: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#urlbar {
+  font-family: "JetBrainsMono NF" !important;
+}
+
+
+#translations-button{
+  display: none !important;
+}
+
+
+/* Change Dark-Reader Pinned Icon */
+
+#addon_darkreader_org-BAP {
+  --webextension-menupanel-image: image-set( url("https://img.icons8.com/?size=1000&id=42658&format=png&color=fdb9c6"), url("https://img.icons8.com/?size=1000&id=42658&format=png&color=fdb9c6") 2x ) !important;
+  --webextension-menupanel-image-light: image-set( url("https://img.icons8.com/?size=1000&id=42658&format=png&color=fdb9c6"), url("https://img.icons8.com/?size=1000&id=42658&format=png&color=fdb9c6") 2x ) !important;
+  --webextension-menupanel-image-dark: image-set( url("https://img.icons8.com/?size=1000&id=42658&format=png&color=fdb9c6"), url("https://img.icons8.com/?size=1000&id=42658&format=png&color=fdb9c6") 2x ) !important;
+  --webextension-toolbar-image: image-set( url("https://img.icons8.com/?size=1000&id=42658&format=png&color=fdb9c6"), url("https://img.icons8.com/?size=1000&id=42658&format=png&color=fdb9c6") 2x ) !important;
+  --webextension-toolbar-image-light: image-set( url("https://img.icons8.com/?size=1000&id=42658&format=png&color=fdb9c6"), url("https://img.icons8.com/?size=1000&id=42658&format=png&color=fdb9c6") 2x ) !important;
+  --webextension-toolbar-image-dark: image-set( url("https://img.icons8.com/?size=1000&id=42658&format=png&color=fdb9c6"), url("https://img.icons8.com/?size=1000&id=42658&format=png&color=fdb9c6") 2x ) !important;
+}
+
+/* Change U-Block Pinned Icon */
+
+#ublock0_raymondhill_net-BAP {
+  --webextension-menupanel-image: image-set( url("https://img.icons8.com/?size=1000&id=93698&format=png&color=fdb9c6"), url("https://img.icons8.com/?size=1000&id=93698&format=png&color=fdb9c6") 2x ) !important;
+  --webextension-menupanel-image-light: image-set( url("https://img.icons8.com/?size=1000&id=93698&format=png&color=fdb9c6"), url("https://img.icons8.com/?size=1000&id=93698&format=png&color=fdb9c6") 2x ) !important;
+  --webextension-menupanel-image-dark: image-set( url("https://img.icons8.com/?size=1000&id=93698&format=png&color=fdb9c6"), url("https://img.icons8.com/?size=1000&id=93698&format=png&color=fdb9c6") 2x ) !important;
+  --webextension-toolbar-image: image-set( url("https://img.icons8.com/?size=1000&id=93698&format=png&color=fdb9c6"), url("https://img.icons8.com/?size=1000&id=93698&format=png&color=fdb9c6") 2x ) !important;
+  --webextension-toolbar-image-light: image-set( url("https://img.icons8.com/?size=1000&id=93698&format=png&color=fdb9c6"), url("https://img.icons8.com/?size=1000&id=93698&format=png&color=fdb9c6") 2x ) !important;
+  --webextension-toolbar-image-dark: image-set( url("https://img.icons8.com/?size=1000&id=93698&format=png&color=fdb9c6"), url("https://img.icons8.com/?size=1000&id=93698&format=png&color=fdb9c6") 2x ) !important;
+}
+
+/* Change Bitwarden Pinned Icon */
+
+#_446900e4-71c2-419f-a6a7-df9c091e268b_-BAP {
+  --webextension-menupanel-image: image-set( url("https://img.icons8.com/?size=1000&id=40HKpZBcDKin&format=png&color=fdb9c6"), url("https://img.icons8.com/?size=1000&id=40HKpZBcDKin&format=png&color=fdb9c6") 2x ) !important;
+  --webextension-menupanel-image-light: image-set( url("https://img.icons8.com/?size=1000&id=40HKpZBcDKin&format=png&color=fdb9c6"), url("https://img.icons8.com/?size=1000&id=40HKpZBcDKin&format=png&color=fdb9c6") 2x ) !important;
+  --webextension-menupanel-image-dark: image-set( url("https://img.icons8.com/?size=1000&id=40HKpZBcDKin&format=png&color=fdb9c6"), url("https://img.icons8.com/?size=1000&id=40HKpZBcDKin&format=png&color=fdb9c6") 2x ) !important;
+  --webextension-toolbar-image: image-set( url("https://img.icons8.com/?size=1000&id=40HKpZBcDKin&format=png&color=fdb9c6"), url("https://img.icons8.com/?size=1000&id=40HKpZBcDKin&format=png&color=fdb9c6") 2x ) !important;
+  --webextension-toolbar-image-light: image-set( url("https://img.icons8.com/?size=1000&id=40HKpZBcDKin&format=png&color=fdb9c6"), url("https://img.icons8.com/?size=1000&id=40HKpZBcDKin&format=png&color=fdb9c6") 2x ) !important;
+  --webextension-toolbar-image-dark: image-set( url("https://img.icons8.com/?size=1000&id=40HKpZBcDKin&format=png&color=fdb9c6"), url("https://img.icons8.com/?size=1000&id=40HKpZBcDKin&format=png&color=fdb9c6") 2x ) !important;
+}
+
+#zen-appcontent-navbar-container {
+  border-bottom: none !important;
+  border-radius: none !important;
+}
+
+
+/* Hide urlbar and tabbar items */
+
+.titlebar-button,
+#TabsToolbar,
+#downloads-button,
+#identity-box,
+#PanelUI-button,
+#unified-extensions-button,
+#ublock0_raymondhill_net-BAP,
+#addon_darkreader_org-BAP,
+#_446900e4-71c2-419f-a6a7-df9c091e268b_-BAP {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Show urlbar and tabbar items */
+.titlebar-button:hover,
+#TabsToolbar:hover,
+#downloads-button:hover,
+#identity-box:hover,
+#PanelUI-button:hover,
+#unified-extensions-button:hover,
+#ublock0_raymondhill_net-BAP:hover,
+#addon_darkreader_org-BAP:hover,
+#_446900e4-71c2-419f-a6a7-df9c091e268b_-BAP:hover,
+#nav-bar:hover #identity-box,
+#nav-bar:hover #TabsToolbar,
+#nav-bar:hover #downloads-button,
+#nav-bar:hover .titlebar-button,
+#nav-bar:hover #PanelUI-button,
+#nav-bar:hover #unified-extensions-button,
+#nav-bar:hover #ublock0_raymondhill_net-BAP,
+#nav-bar:hover #addon_darkreader_org-BAP,
+#nav-bar:hover #_446900e4-71c2-419f-a6a7-df9c091e268b_-BAP {
+    opacity: 1;
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+
+
+/*Zen acent color*/
+
+:root {
+  --zen-primary-color: #fdb9c6 !important;
+  --zen-colors-primary: #fdb9c6 !important;
+  --zen-colors-secondary: var(--tab-loading-fill) !important;
+  --toolbarbutton-icon-fill: var(--tab-loading-fill) !important;
+}
+
+#identity-box{
+  fill: #fdb9c6;
+}
+
+/*Zen background color*/
+
+:root {
+  --zen-main-browser-background: #0f0f0f !important;
+  }
+}
