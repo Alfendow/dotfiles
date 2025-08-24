@@ -1,7 +1,7 @@
 {
   "about": {
     "browser": "firefox",
-    "version": "20.4.2"
+    "version": "21.1.0"
   },
   "showall": true,
   "lang": "tr",
@@ -14,105 +14,21 @@
   "time": true,
   "main": false,
   "dateformat": "auto",
-  "background_blur": 0,
-  "background_bright": 1,
-  "background_type": "local",
   "quicklinks": true,
-  "syncbookmarks": null,
   "textShadow": 0,
-  "announcements": "off",
-  "review": 9,
-  "css": "#bookmarks_container,\n#bookmarks,\n#element-mover,\n.move-overlay {\n\tbackdrop-filter: none !important;\n}\n\n\nbody.dark #editlink,\nbody.dark #bookmarks,\nbody.dark #element-mover,\nbody.autodark #editlink,\nbody.autodark #bookmarks,\nbody.autodark #element-mover {\n\tbackground-color: #222;\n}\n\n#settings .as,\n#settings,\n.move-overlay {\n\ttransition: none;\n}\n\n\n.link-title{\n\tcolor: #ffffff\n}\n\n\n#interface {\n\ttransition: none !important;\n}\n\n#pocket-editor{\n\tborder: 0px solid;\n\tfont-color: #ffffff;\n\tborder-radius: 0px;\n\tfont-size: 18px;\n\tbox-shadow: none;\n}\n\n#time-container{\n\tfont-size: 16px;\n}\n\n.link-title.selected-group{ \n\tborder-color: transparent;\n\tbackground-color: transparent;\n}\n\n#credit-container{\n\tdisplay: none\n}",
+  "announcements": "all",
+  "review": -1,
+  "css": "#bookmarks_container,\n#bookmarks,\n#element-mover,\n.move-overlay {\n\tbackdrop-filter: none !important;\n}\n\n\nbody.dark #editlink,\nbody.dark #bookmarks,\nbody.dark #element-mover,\nbody.autodark #editlink,\nbody.autodark #bookmarks,\nbody.autodark #element-mover {\n\tbackground-color: #222;\n}\n\n#settings .as,\n#settings,\n.move-overlay {\n\ttransition: none;\n}\n\nbody,\n.link-title{\n\tcolor: #d4be98;\n}\n\n\n#interface {\n\ttransition: none !important;\n}\n\n#pocket-editor{\n\tborder: 0px solid;\n\tfont-color: #ffffff;\n\tborder-radius: 0px;\n\tfont-size: 18px;\n\tbox-shadow: none;\n}\n\n#time-container{\n\tfont-size: 16px;\n}\n\n.link-title.selected-group{ \n\tborder-color: transparent;\n\tbackground-color: transparent;\n}\n\n#credit-container{\n\tdisplay: none\n}\n",
   "hide": {
     "settingsicon": true,
-    "date": false,
-    "clock": false
+    "clock": false,
+    "date": false
   },
   "linkstyle": "medium",
   "linktitles": false,
   "linkbackgrounds": false,
   "linknewtab": false,
-  "linksrow": "6",
-  "linkskigbfk": {
-    "_id": "linkskigbfk",
-    "parent": "Kişisel",
-    "order": 2,
-    "title": "Gmail",
-    "url": "https://mail.google.com/mail/u/0/#inbox",
-    "icon": "https://img.icons8.com/?size=100&id=7X2DNQH7dVDS&format=png&color=fdb9c6"
-  },
-  "linksqbkkjd": {
-    "_id": "linksqbkkjd",
-    "parent": "Okul",
-    "order": 3,
-    "title": "Classroom",
-    "url": "https://classroom.google.com/u/1/?hl=tr",
-    "icon": "https://img.icons8.com/?size=100&id=OKC5NHdJhnhC&format=png&color=fdb9c6"
-  },
-  "linksnkgaei": {
-    "_id": "linksnkgaei",
-    "parent": "Okul",
-    "order": 1,
-    "title": "E-kampüs",
-    "url": "https://ekampus.tarsus.edu.tr/",
-    "icon": "https://img.icons8.com/?size=100&id=fAP1wkHDOeNW&format=png&color=fdb9c6"
-  },
-  "linksjblkco": {
-    "_id": "linksjblkco",
-    "parent": "Okul",
-    "order": 2,
-    "title": "Okul-Mail",
-    "url": "https://mail.google.com/mail/u/1/#inbox",
-    "icon": "https://img.icons8.com/?size=100&id=7X2DNQH7dVDS&format=png&color=fdb9c6"
-  },
-  "linksdbfgaa": {
-    "_id": "linksdbfgaa",
-    "parent": "Okul",
-    "order": 0,
-    "title": "Mühendislik",
-    "url": "https://ce.tarsus.edu.tr/",
-    "icon": "https://img.icons8.com/?size=100&id=mVS81XEZeNXr&format=png&color=fdb9c6"
-  },
-  "linksoklbdq": {
-    "_id": "linksoklbdq",
-    "parent": "Kişisel",
-    "order": 3,
-    "title": "Translate",
-    "url": "https://translate.google.com/",
-    "icon": "https://img.icons8.com/?size=100&id=WJ2lqZNSPQfe&format=png&color=fdb9c6"
-  },
-  "linksrfmheg": {
-    "_id": "linksrfmheg",
-    "parent": "Kişisel",
-    "order": 0,
-    "title": "Youtube",
-    "url": "https://www.youtube.com",
-    "icon": "https://img.icons8.com/?size=100&id=8n8Zsyb9txE5&format=png&color=fdb9c6"
-  },
-  "linksrfipcb": {
-    "_id": "linksrfipcb",
-    "parent": "Kişisel",
-    "order": 1,
-    "title": "Whatsapp",
-    "url": "https://web.whatsapp.com/",
-    "icon": "https://img.icons8.com/?size=100&id=5dwUMJ8TQaqa&format=png&color=fdb9c6"
-  },
-  "linksfirrap": {
-    "_id": "linksfirrap",
-    "parent": "Kişisel",
-    "order": 4,
-    "title": "Gpt",
-    "url": "https://chat.openai.com/",
-    "icon": "https://img.icons8.com/?size=100&id=46gNeT4X7y2Z&format=png&color=fdb9c6"
-  },
-  "linksmenqdr": {
-    "_id": "linksmenqdr",
-    "parent": "Kişisel",
-    "order": 5,
-    "title": "Wifi",
-    "url": "https://192.168.1.1",
-    "icon": "https://img.icons8.com/?size=100&id=640vil3VogOz&format=png&color=fdb9c6"
-  },
+  "linksrow": "16",
   "linkgroups": {
     "on": true,
     "selected": "Kişisel",
@@ -122,6 +38,21 @@
     ],
     "pinned": [],
     "synced": []
+  },
+  "backgrounds": {
+    "type": "color",
+    "fadein": 0,
+    "blur": null,
+    "bright": null,
+    "frequency": "pause",
+    "color": "#202020",
+    "urls": "",
+    "images": "bonjourr-images-daylight",
+    "videos": "bonjourr-videos-daylight",
+    "queries": {},
+    "texture": {
+      "type": "none"
+    }
   },
   "clock": {
     "ampm": false,
@@ -139,12 +70,6 @@
     "background": "#fff0"
   },
   "worldclocks": [],
-  "unsplash": {
-    "every": "tabs",
-    "collection": "",
-    "lastCollec": "day",
-    "time": 1742654584172
-  },
   "weather": {
     "ccode": "TR",
     "city": "yenikoy",
@@ -157,11 +82,11 @@
   },
   "notes": {
     "on": true,
-    "opacity": 0.1,
-    "background": "#0000",
-    "text": "",
     "width": 70,
-    "align": "center"
+    "opacity": 0.1,
+    "align": "center",
+    "text": "",
+    "background": "#0000"
   },
   "searchbar": {
     "on": false,
@@ -175,25 +100,16 @@
   "quotes": {
     "on": false,
     "author": false,
-    "type": "classic",
-    "frequency": "day",
-    "last": 1743887838151
+    "type": "stoic",
+    "frequency": "tabs",
+    "last": 1756060359471
   },
   "font": {
-    "size": "17.9",
     "family": "JetBrains Mono",
     "system": false,
+    "size": "15.55",
     "weight": "400",
-    "weightlist": [
-      "100",
-      "200",
-      "300",
-      "400",
-      "500",
-      "600",
-      "700",
-      "800"
-    ]
+    "weightlist": []
   },
   "supporters": {
     "enabled": false,
@@ -205,12 +121,12 @@
     "layouts": {
       "single": {
         "items": {
-          "time": {
+          "notes": {
             "box": "baseline center",
             "text": ""
           },
-          "notes": {
-            "box": "baseline center",
+          "time": {
+            "box": "center",
             "text": ""
           }
         },
@@ -227,5 +143,102 @@
         ]
       }
     }
+  },
+  "linksnkgaei": {
+    "_id": "linksnkgaei",
+    "parent": "Okul",
+    "order": 1,
+    "title": "E-kampüs",
+    "url": "https://ekampus.tarsus.edu.tr/",
+    "icon": "https://img.icons8.com/?size=100&id=fAP1wkHDOeNW&format=png&color=7daea3"
+  },
+  "linksicrpfa": {
+    "_id": "linksicrpfa",
+    "parent": "Kişisel",
+    "order": 4,
+    "title": "",
+    "url": "https://gemini.google.com",
+    "icon": "https://img.icons8.com/?size=100&id=21TRiqrlWkkd&format=png&color=7daea3"
+  },
+  "linksmenqdr": {
+    "_id": "linksmenqdr",
+    "parent": "Kişisel",
+    "order": 6,
+    "title": "Wifi",
+    "url": "https://192.168.1.1",
+    "icon": "https://img.icons8.com/?size=100&id=640vil3VogOz&format=png&color=d3869b"
+  },
+  "linksfirrap": {
+    "_id": "linksfirrap",
+    "parent": "Kişisel",
+    "order": 5,
+    "title": "Gpt",
+    "url": "https://chat.openai.com/",
+    "icon": "https://img.icons8.com/?size=100&id=46gNeT4X7y2Z&format=png&color=d4be98"
+  },
+  "syncbookmarks": null,
+  "background_solid": "#222",
+  "linkskigbfk": {
+    "_id": "linkskigbfk",
+    "parent": "Kişisel",
+    "order": 2,
+    "title": "Gmail",
+    "url": "https://mail.google.com/mail/u/0/#inbox",
+    "icon": "https://img.icons8.com/?size=100&id=7X2DNQH7dVDS&format=png&color=e78a4e"
+  },
+  "linksoklbdq": {
+    "_id": "linksoklbdq",
+    "parent": "Kişisel",
+    "order": 3,
+    "title": "Translate",
+    "url": "https://translate.google.com/",
+    "icon": "https://img.icons8.com/?size=100&id=WJ2lqZNSPQfe&format=png&color=d8a657"
+  },
+  "linksqbkkjd": {
+    "_id": "linksqbkkjd",
+    "parent": "Okul",
+    "order": 3,
+    "title": "Classroom",
+    "url": "https://classroom.google.com/u/1/?hl=tr",
+    "icon": "https://img.icons8.com/?size=100&id=OKC5NHdJhnhC&format=png&color=89b492"
+  },
+  "linksmmlkgm": {
+    "_id": "linksmmlkgm",
+    "parent": "Okul",
+    "order": 4,
+    "title": "",
+    "url": "https://ferhatgec.github.io/kitap/"
+  },
+  "linksrfmheg": {
+    "_id": "linksrfmheg",
+    "parent": "Kişisel",
+    "order": 0,
+    "title": "Youtube",
+    "url": "https://www.youtube.com",
+    "icon": "https://img.icons8.com/?size=100&id=8n8Zsyb9txE5&format=png&color=ea6962"
+  },
+  "linksjblkco": {
+    "_id": "linksjblkco",
+    "parent": "Okul",
+    "order": 2,
+    "title": "Okul-Mail",
+    "url": "https://mail.google.com/mail/u/1/#inbox",
+    "icon": "https://img.icons8.com/?size=100&id=7X2DNQH7dVDS&format=png&color=e78a4e"
+  },
+  "linksdbfgaa": {
+    "_id": "linksdbfgaa",
+    "parent": "Okul",
+    "order": 0,
+    "title": "Mühendislik",
+    "url": "https://ce.tarsus.edu.tr/",
+    "icon": "https://img.icons8.com/?size=100&id=mVS81XEZeNXr&format=png&color=ddc7a1"
+  },
+  "linksrfipcb": {
+    "_id": "linksrfipcb",
+    "parent": "Kişisel",
+    "order": 1,
+    "title": "Whatsapp",
+    "url": "https://web.whatsapp.com/",
+    "icon": "https://img.icons8.com/?size=100&id=5dwUMJ8TQaqa&format=png&color=89b492"
   }
 }
