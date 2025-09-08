@@ -1,114 +1,155 @@
 
 *{
-	font-size: 13px;
-	color: #ffffff;
-	font-weight: 800;
-	font-family: JetBrainsMono NFP;
+	font-size: 15px;
+	color: #D4BE98;
+	font-weight: 600;
+	font-family: Maple Mono NF;
 }
 
-
-
-.yasb-bar {
-	padding: 0px 5px;
+.tooltip {
+    background-color: #202020;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-top: 5px;
+	color: #D4BE98;
+	font-weight: 700;
+	font-family: Maple Mono NF;
 }
-
 
 /* GlazeWM */
 
 .glazewm-workspaces {
-	background-color: #0f0f0f;
-	border: 2px solid;
-	border-color: #fdb9c6;
-	padding: 5px;
-    border-radius: 6px;
-	margin-right: 10px;
+	border-radius: 8px;
+	padding: 0 6px;
+	background-color: #202020;
 }
 
 
 .glazewm-workspaces .ws-btn {
+	color: #D4BE98;
     border: none;
-    padding: 0px 8px;
+    padding: 0px 7px;
+	outline: none;
 }
-.glazewm-workspaces .ws-btn.active {
-    color: #fdb9c6;
+.glazewm-workspaces .ws-btn.active_empty,
+.glazewm-workspaces .ws-btn.active_populated {
+	color: #89b482;	
+	outline: none;
 }
 
 
 /* Clock-Calendar */
 
+.clock-widget .widget-container .label {
+	color: #7daea3;	
+}
+
 
 .clock-widget {
-    background-color: #0f0f0f;
-    padding: 0 15px;
-	border: 2px solid;
-	border-color: #fdb9c6;
+
 	border-radius: 6px;
+	background-color: #202020;
+	padding: 0 15px;
 }
 
 
 .calendar,
 .calendar .calendar-table,
 .calendar .calendar-table::item {
-    background-color: #0f0f0f;
-	
+	background-color: #202020;
+	color: #D4BE98;
+	border-radius: 8px;	
+    outline: none;
+    border: none;
+	margin: 0px;
+	padding: 0px;
 }
 .calendar .calendar-table::item:selected {
-    background-color: #fdb9c6;
-		border-radius: 4px;
+    background-color: #7daea3;	
+	color: #202020;
+	margin: 0px;
+	padding: 0px;
 }
 
 .calendar .day-label,
 .calendar .month-label,
 .calendar .date-label {
-    font-size: 16px;
-    color: #fff;
-    font-weight: 700;
-    min-width: 150px;
-    max-width: 150px;
+		margin: -50px;
 }
-
-.calendar .date-label {
-    font-size: 88px;
-    font-weight: 8800;
-}
-
 
 
 /* Taskbar */
- 
+
 .taskbar-widget {
-	background-color: #0f0f0f;
-	border: 2px solid;
-	border-color: #fdb9c6;
-	padding: 0 7px;
-    border-radius: 6px;
-} 
- 
-.taskbar-widget .app-icon {
-    padding:0 5px;
+	background-color: #202020;
+	margin-left: 8px;
+    border-radius: 8px;	
 }
+
+
  
+.taskbar-widget .app-container {
+    padding: 0 8px;
+}
+
+
+
+
+
+
+/*Bluetooth*/
+
+
+.bluetooth-widget .widget-container {
+	background-color: #202020;
+	margin: -15px;
+
+}
+.bluetooth-widget .label {
+	padding: 5px;
+	font-size: 14px;
+}
+.bluetooth-widget .label.alt {}
+.bluetooth-widget .icon {}
+
+
+
+/* Wifi */
+
+.wifi-widget {
+	background-color: #202020;
+}
+
+.wifi-widget .widget-container .label {
+	font-size: 14px;
+	padding-right: 15px;
+	padding-left: 5px;
+	color: #e78a4e;
+}
+.wifi-widget .widget-container .icon {
+	font-size: 13px;
+	padding-right: 15px;
+	padding-left: 5px;
+
+}
+
 
 /* Volume */
 
 .volume-widget {	
+	background-color: #202020;
+
 }
 .volume-widget .label {
-	padding-right:10px;
-	padding-left:10px;
-	background-color: #0f0f0f;
-	border-top: 2px solid;
-	border-bottom: 2px solid;
-	border-color: #fdb9c6;
+	padding-right: 15px;
+	color: #a9b665;
 }
 
 
 .audio-menu {
-    background-color: #0f0f0f;
-	border: 3px solid;
-	border-color: #fdb9c6;
-	border-radius: 6px;
-
+	border-radius: 0px;
+	background-color: #202020;
 }
 .audio-container .device {
 	border-radius: 6px;
@@ -116,63 +157,94 @@
     margin: 3px 0;
 }
 .audio-container .device.selected {
-	color: #0f0f0f;
-	border: 2px solid;
-	background-color: #fdb9c6;
-	border-radius: 6px;
+	background-color: #32361a;
 }
 
 .audio-container .device:hover {
-	background-color: rgba(255,255,255,0.1);
+	background-color: #202020;
 	color: #ffffff;
 	border: 0px;
-	border-radius: 6px;
+	
 }
 
 
+.volume-slider::groove{
+	background-color: #a9b665;
+	height: 4px;
+	margin: 0px 10px;
+}
+
+.volume-slider::handle{
+	background-color: #a9b665;
+	height: 16px;
+	width: 12px;
+	margin: -8px 0;
+	border-radius: 3px;
+	
+	
+}
 
 /* Power menu */
 
-
 .power-menu-widget .label {
-	color: #ffffff;
-	padding-right:15px;
-	padding-left:10px;
-	font-size: 14px;
-	background-color: #0f0f0f;
-	border-top: 2px solid;
-	border-bottom: 2px solid;
-	border-right: 2px solid;
-	border-color: #fdb9c6;
-    border-top-right-radius: 6px;
-	border-bottom-right-radius: 6px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	padding-right:13px;
+	background-color: #202020;
+	color: #ea6962;
+	font-size: 16px;
+	margin-right: 0.5px;
 }
 
 
 .power-menu-popup {
-	background-color: #0f0f0f;
-	border: 3px solid;
-	border-color: #fdb9c6;
-    border-radius: 6px;
+	border: none;
+	border-radius: 8px;
+	background-color: #202020;
 }
+
+.power-menu-popup.hover{
+	background-color:323232;
+}
+
 .power-menu-popup .button {
-	width: 180px;
-	height: 230px;
+	width: 150px;
+	height: 150px;
 	border: 0px;
 }
 .power-menu-popup .button.hover {
-	background-color:rgba(255, 255, 255, 0.1);
+	color: #ffffff;
+	background-color: #323232;
 }
 
 .power-menu-popup .button .icon {
-	font-size: 64px;
-	padding-top: 32px;
+	font-size: 60px;
+	padding-top: 30px;
 }
 
+.power-menu-popup .button .label {
+	color: transparent;
+	font-size: 1px;
+}
 
-.uptime {
-	font-size: 18px;
-	margin-bottom: 20px;
+.power-menu-popup .button.cancel .icon {
+	color: #d3869b;
+}
+.power-menu-popup .button.shutdown .icon{
+	color: #ea6962;
+}
+.power-menu-popup .button.restart .icon{
+	color: #a9b665;
+	font-size: 65px;
+	margin-top: -5px;
+}
+.power-menu-popup .button.sleep .icon{
+	font-size: 80px;
+	margin-top: -15px;
+	color: #7daea3;
+}
+.power-menu-popup .button.signout .icon{
+	color: #e78a4e;
 }
 
 
@@ -180,33 +252,385 @@
 /*Tray*/
 
 
-.systray .button {
-	background-color: #0f0f0f;
-	border-top: 2px solid;
-	border-bottom: 2px solid;
-	border-color: #fdb9c6;
-	border-radius: 0px;
-    padding: 7px 4px;
+.systray .button {	
+	border: none;
+    padding: 8px 4px;
+	background-color: #202020;
+	font-weight: 1000;
 }
 
 
 .systray .unpinned-visibility-btn {
-	background-color: #0f0f0f;
-    height: 25px;
-	padding: 6px;
-	border-top: 2px solid;
-	border-bottom: 2px solid;
-	border-left: 2px solid;
-	border-color: #fdb9c6;
-    border-top-left-radius: 6px;
-	border-bottom-left-radius: 6px;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;	
+    height: 30px;
+	padding: 2px 5px;
+	padding-left: 10px;
+    border: none;
+	background-color: #202020;
+	color: #d3869b;
+	margin-right: -0.5px;
+	font-size: 17px;
+	outline: none;
 }
 
-.systray .unpinned-visibility-btn:checked {
-	background-color: #0f0f0f;
-	padding: 4px 3px;	
+.systray .unpinned-visibility-btn:checked {	
+	color: #d3869b;
+	margin-right: -0.5px;
+	outline: none;
+	
 }
 
-.systray .unpinned-visibility-btn:hover {
+
+
+
+/*Weather*/
+
+.weather-widget {
+	padding-right: 300px;
+}
+.weather-widget .widget-container {}
+.weather-widget .label {}
+.weather-widget .label.alt {}
+.weather-widget .icon {
+	font-size: 18px;
+	padding-right: 5px;
+}
+
+/* Individual weather icons */
+.weather-widget .icon.sunnyDay {}
+.weather-widget .icon.clearNight {}
+.weather-widget .icon.cloudyDay {}
+.weather-widget .icon.cloudyNight {}
+.weather-widget .icon.rainyDay {}
+.weather-widget .icon.rainyNight {}
+.weather-widget .icon.snowyIcyDay {}
+.weather-widget .icon.snowyIcyNight {}
+.weather-widget .icon.blizzardDay {}
+.weather-widget .icon.blizzardNight {}
+.weather-widget .icon.foggyDay {}
+.weather-widget .icon.foggyNight {}
+.weather-widget .icon.thunderstormDay {}
+.weather-widget .icon.thunderstormNight {}
+.weather-widget .icon.default {}
+
+/* Weather card style */
+.weather-card {
+}
+.weather-card-today {
+}
+.weather-card-today .label {
+    font-size: 12px;
+}
+.weather-card-today .label.location {
+    font-size: 18px;
+    font-weight: 700;
+}
+.weather-card-today .label.alert {
+    font-size: 100px;
+    font-weight: 700;
+    padding: 5px 0;
+}
+.weather-card-day {
+}
+.weather-card-day .label {
+    font-size: 12px;
+}
+
+
+
+
+
+/*Pomodoro*/
+
+
+/*.pomodoro-widget {
 	background-color: #0f0f0f;
+	border: 2px solid #f7a982;
+	
+	margin-left: 5px;
+	padding: 0 4px;
+}
+.pomodoro-widget .icon {
+    font-size: 12px;
+    padding-right: 4px;
+}
+.pomodoro-widget .label.paused,
+.pomodoro-widget .icon.paused {
+    color: #f7a982;
+}
+.pomodoro-widget .label.work,
+.pomodoro-widget .icon.work {
+    color: #fffff;
+}
+.pomodoro-widget .label.break,
+.pomodoro-widget .icon.break {
+    color: #89b4fa;
+}
+
+
+/* Pomodoro menu styling */
+/*
+.pomodoro-menu {
+    background-color: #0f0f0f;
+    
+}
+.pomodoro-menu .header {
+    font-size: 16px;
+    font-weight: 600;
+    max-height: 0px;
+    color: #ffffff;
+}
+.pomodoro-menu .status {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.pomodoro-menu .session {
+    font-size: 1px;
+    color: #0f0f0f;
+}
+.pomodoro-menu .button {
+    color: #ffffff;
+	background-color: #0f0f0f;
+	border: 2px solid #f7a982;
+	
+    padding: 6px 12px;
+}
+.pomodoro-menu .button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.pomodoro-menu .button.pause {
+    background-color: #f7a982;
+    color: #0f0f0f;
+}
+.pomodoro-menu .button:pressed {
+    background-color: #f7a982;
+}
+
+
+/* Notes*/
+/*
+.notes-widget {
+	margin-right: 5px;
+	padding: 0 5px;
+	background-color: #0f0f0f;
+	border: 2px solid #f7a982;
+	
+}
+.notes-widget .label {
+   font-size: 14px;
+   color: #ffffff;
+}
+.notes-widget .icon {
+    font-size: 16px;
+    color: #ffffff;
+}
+/*
+
+
+/* Notes Widget Menu */
+
+/*
+.notes-menu {
+    min-width: 400px;
+    max-width: 400px;
+    background-color: #0f0f0f;
+}
+.notes-menu .note-item {
+    background-color:transparent;
+}
+.notes-menu .note-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.notes-menu .note-item .icon {
+    font-size: 15px;
+    padding: 0 5px;
+}
+.notes-menu .delete-button {
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    font-size: 8px;
+    padding: 10px 10px;
+}
+.notes-menu .delete-button:hover {
+}
+
+.notes-menu .note-item .title {
+    font-size: 13px;
+}
+.notes-menu .note-item .date {
+    font-size: 12px;
+    color: #f7a982;
+}
+.notes-menu .empty-list {
+    color: #0f0f0f;
+	font-size: 1px;
+}
+.notes-menu .add-button,  
+.notes-menu .cancel-button {
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+    
+    color: white;
+    font-family: JetBrainsMono NFP;
+}
+.notes-menu .cancel-button {
+    margin-left: 4px;
+}
+.notes-menu .add-button:hover,
+.notes-menu .cancel-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.notes-menu .scroll-area {
+    background: transparent; 
+    border: none; 
+    border-radius:0;
+}
+.notes-menu .note-input {
+    background-color: transparent;
+	color: #ffffff;
+    border: none;
+    font-family: JetBrainsMono NFP;
+    font-size: 14px;
+    max-height: 30px;
+}
+.note-input:focus {
+}  */
+
+
+.wifi-menu {
+    max-height: 350px;
+    min-height: 375px;
+    min-width: 300px;
+	max-width: 1000px;
+}
+
+.wifi-menu .progress-bar {
+	background-color: #0f0f0f;
+	border: none;
+    max-height: 2px;
+}
+
+.wifi-menu .progress-bar::chunk {
+    background-color: #f7a982;
+}
+
+.wifi-menu .header {
+	color: #0f0f0f;	
+    font-size: 1px;
+	padding: 0px;
+}
+
+.wifi-menu .error-message {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    padding: 12px;
+    background-color: rgba(255, 0, 0, 0.2);
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.wifi-menu .wifi-list {
+	background-color: #0f0f0f;
+    margin-right: 3px;
+}
+
+.wifi-menu .wifi-item {
+	background-color: #0f0f0f;
+    min-height: 35px;
+    padding: 2px 12px;
+    margin: 2px 4px;
+}
+
+.wifi-menu .wifi-item:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+}
+
+.wifi-menu .wifi-item[active=true] {
+	background-color: #0f0f0f8A;
+    font-size: 14px;
+    border-radius: 6px;
+    min-height: 80px;
+}
+
+.wifi-menu .wifi-item .icon {
+    font-family: 'Segoe Fluent Icons';
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.wifi-menu .wifi-item .name {
+    color: var(--mainLight);
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.wifi-menu .wifi-item .password {
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.wifi-menu .wifi-item .status {
+	color: #0f0f0f;
+    font-size: 1px;
+}
+
+.wifi-menu .wifi-item .strength {
+    color: #0f0f0f;
+	font-size: 1px;
+}
+
+.wifi-menu .wifi-item .controls-container {
+}
+
+.wifi-menu .wifi-item .connect {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: none;
+    font-size: 12px;
+}
+
+.wifi-menu .wifi-item .connect:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.wifi-menu .wifi-item .connect:pressed {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.wifi-menu .footer {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 10px;
+    color: #B3B9D2;
+}
+
+.wifi-menu .footer .settings-button {
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    padding: 0 2px;
+    min-width: 26px;
+    min-height: 26px;
+    color: #B3B9D2;
+}
+
+.wifi-menu .footer .refresh-icon {
+    font-family: 'Segoe Fluent Icons';
+    background-color: transparent;
+    border: none;
+    min-width: 26px;
+    min-height: 26px;
+    color: #B3B9D2;
+}
+
+.wifi-menu .footer .refresh-icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
 }
