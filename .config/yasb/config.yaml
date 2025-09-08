@@ -12,28 +12,29 @@ bars:
     blur_effect:
       enabled: false
       acrylic: false
-      dark_mode: true
+      dark_mode: false
       round_corners: false
       border_color: None
     window_flags:
-      always_on_top: true
+      always_on_top: false
       windows_app_bar: true
       hide_on_fullscreen: true
     dimensions:
       width: "100%"
-      height: 30
+      height: 32
     padding:
-      top: 5
-      left: 5
-      bottom: 5
-      right: 5
+      top: 10
+      left: 10
+      bottom: 0
+      right: 10
     widgets:
-      left: ["glazewm_workspaces","taskbar"]
+      left:   ["glazewm_workspaces","taskbar"]
       center: ["clock"]
-      right: ["systray","volume","power_menu"]
-      
-      
+      right:  ["systray","wifi","volume","power_menu"]
+
+
 widgets:
+
 
   systray:
     type: "yasb.systray.SystrayWidget"
@@ -42,58 +43,114 @@ widgets:
       label_collapsed: ""
       label_expanded: ""
       label_position: "left"
-      icon_size: 16
+      icon_size: 18
       pin_click_modifier: "alt" 
       show_unpinned: false
       show_battery: false
       show_volume: false
-      show_network: true
+      show_network: false
+
+  bluetooth:
+    type: "yasb.bluetooth.BluetoothWidget"
+    options:
+      label: "{icon}"
+      label_alt: "{device_name}"
+      label_no_device: "No devices connected"
+      label_device_separator: ", "
+      icons: 
+        bluetooth_on: "󰂯"
+        bluetooth_off: "󰂲"
+        bluetooth_connected: "󰂱"
+      callbacks:
+        on_left: "toggle_label"
+        on_right: "exec cmd.exe /c start ms-settings:bluetooth"
 
 
   taskbar:
     type: "yasb.taskbar.TaskbarWidget"
     options:
+      icon_size: 17
       animation:
-        enabled: true
-      icon_size: 15
+        enabled: false
 
 
   glazewm_workspaces:
     type: "glazewm.workspaces.GlazewmWorkspacesWidget"
     options:
-      offline_label: "GlazeWM Offline"
       hide_empty_workspaces: true
-      hide_if_offline: false
-      
+      hide_if_offline: true
+
+  wifi:
+    type: "yasb.wifi.WifiWidget"
+    options:
+      label: "{wifi_icon}"
+      update_interval: 5000
+      callbacks:
+        on_left: "toggle_menu"
+        on_middle: "exec explorer ms-availablenetworks:"
+        on_right: "exec explorer ms-settings:network"
+      ethernet_label: "<span>{wifi_icon}</span>"
+      ethernet_label_alt: "<span>{wifi_icon}</span>{ip_addr}"
+      menu_config:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "#202020"
+        alignment: "right"
+        direction: "down"
+        offset_top: 5
+        offset_left: 53
+      ethernet_icon: ""
+      wifi_icons: [
+      "",  # Icon for 0% strength
+      "",  # Icon for 1-24% strength
+      "",  # Icon for 1-24% strength
+      "",  # Icon for 1-24% strength
+      "",  # Icon for 1-24% strength
+      ]   
 
   volume:
     type: "yasb.volume.VolumeWidget"
     options:
-      label: ""
+      label: "{icon}"
+      volume_icons:
+        - ""  # Icon for muted
+        - ""  # Icon for 0-10% volume
+        - ""  # Icon for 11-30% volume
+        - ""  # Icon for 31-60% volume
+        - ""  # Icon for 61-100% volume
       callbacks:
-        on_right: "exec cmd.exe /c start ms-settings:sound"
+        on_right: "exec cmd.exe /c start ms-settings:sound"    
+      audio_menu:
+        border_color: "#202020"
+        blur: True
+        alignment: 'right'
+        offset_top: 5
+        offset_left: 23
   clock:
     type: "yasb.clock.ClockWidget"
     options:
-      label: "{  %d %B %A     %H:%M }"
+      label: "{ %H:%M}"
+      label_alt: "{ %d %B %A}"
       locale: "tr"
       calendar:
-        border_color: "#fdb9c6"
+        border_color: "#202020"
         alignment: "center"
-        offset_top: 10
-        
-        
+        offset_top: 8
+
+
   power_menu:
-      type: "yasb.power_menu.PowerMenuWidget"
-      options:
-        label: "\uf011"
-        uptime: True
-        blur: False
-        blur_background: True
-        animation_duration: 250 # Milisecond 
-        button_row: 5 # Number of buttons in row, min 1 max 5
-        buttons:
-          sleep: ["\u23fe", "Uyku"]
-          restart: ["\uead2", "Yeniden Başlat"]
-          shutdown: ["\uf011", "Kapat"]
-          cancel: ["󰌍", "Geri"]
+    type: "yasb.power_menu.PowerMenuWidget"
+    options:
+      label: "\uf011"
+      uptime: False
+      blur: False
+      blur_background: False
+      animation_duration: 0
+      button_row: 5 
+      buttons:
+        signout: ["", ""]
+        sleep: ["󰤄", ""]
+        restart: ["", ""]
+        shutdown: ["", ""]
+        cancel: ["", ""]
